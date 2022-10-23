@@ -319,6 +319,10 @@ ul {
 }
 .checkbox {
         position: relative;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .terms-label {
         display: block;
@@ -336,6 +340,16 @@ ul {
 }
 .terms {
         color: var(--button-active-color);
+}
+.check-icon {
+        position: absolute;
+        left:52px;
+        top: 5%;
+}
+.check-input {
+        position: absolute;
+        left: 52px;
+        top: 5%;
 }
 .send-button {
         display: block;
