@@ -535,7 +535,7 @@ ul {
         background-color: #2F303A;
         display: block;
         display: flex;
-        align-items: baseline;
+        /* align-items: baseline; */
 }
 .logo-footer {
         font-family: 'Raleway';
@@ -642,21 +642,25 @@ ul {
 .page-footer .social-net {
         padding: 0;
 }
-
-.email-send {
-        display: block;
+.signup {
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        margin: 72px 0 94px 93px;
+        width: 570px;
+        height: 86px;
+}
+/* .signup-form {
+        
+        
+        
+} */
+.signup-title {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0;
-        width: 570px;
-        height: 86px;       
-}
-.signup-title {
-        display: block;
-        margin-top: 72px;
-        margin-bottom: 20px;
+        padding: 0;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -666,26 +670,28 @@ ul {
         text-transform: uppercase;
         color: #FFFFFF;
 }
-.email-box {
-        display: inline-block;
+
+.email-input {
+        display: block;
+        display: flex;
         width: 358px;
         height: 50px;
-        margin-top: 0;
-        margin-right: 0;
+        margin-top: 20px;
+        margin-right: 12px;
         align-items: center;
         text-align: center;
-        color: rgba(47, 48, 58, 1);
+        background-color: rgba(47, 48, 58, 1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-.email-button {
-        display: inline-block;
+.signup-button {
+        display: block;
         margin-right: 0;
         width: 200px;
         height: 50px;
         align-items: center;
-        text-align: center;
+        text-align: center; 
         background-color: var(--button-active-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
