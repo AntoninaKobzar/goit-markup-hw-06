@@ -394,7 +394,7 @@
               <button class="signup-button" type="submit">
                 Підписатися<svg class="send-icon" width="24" height="24">
                   <use href="../goit-markup-hw-05/icons.svg#icon-icon-send"></use>
-                </svg>  </button>
+                </svg></button>
             </form>
             </div> 
         </div>
@@ -403,6 +403,43 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <form class="order-form">
+            <p class="order-title">Залиште свої дані, ми вам передзвонимо</p>
+            <label class="name-lable">
+              Ім'я
+              <input class="name-input" type="name" name="name" placeholder="name" 
+              <svg class="person-icon" width="18" height="18">
+                  <use href="../goit-markup-hw-05/icons.svg#icon-person-icon"></use>
+                </svg>/>
+            </label>
+            <label class="phone-lable">
+              Телефон
+              <input class="phone-input" type="phone" name="phone" placeholder="phone" 
+              <svg class="phone-icon" width="18" height="18">
+                  <use href="../goit-markup-hw-05/icons.svg#icon-phone-black"></use>
+                </svg>/>
+            </label>
+            <label class="phone-lable">
+              Пошта
+              <input class="email-input" type="email" name="email" placeholder="email" 
+              <svg class="mail-icon" width="18" height="18">
+                  <use href="../goit-markup-hw-05/icons.svg#icon-icon-send"></use>
+                </svg>/>
+            </label>
+            <label class="comment-lable">
+              Коментар
+              <input class="comment-input" type="" name="" placeholder="Введіть текст"/>
+            </label>
+            <label class="terms-lable">
+              Погоджуюся з розсилкою та приймаю <a class="terms" href="./" >Умови договору</a>
+              <input class="check-input" type="checkbox" name="terms" value="" checked
+              <svg class="mail-icon" width="18" height="18">
+                  <use href="../goit-markup-hw-05/icons.svg#icon-square"></use>
+                </svg>/>
+            </label>
+            <button class="send-button" type="submit">Відправити</button>
+
+          </form>
           <button type="button" class="button-close" data-modal-close>
               <svg class="x-icon" width="18" height="18">
                 <use href="../goit-markup-hw-05/images/icons.svg#icon-close-button"></use>
