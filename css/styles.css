@@ -641,6 +641,14 @@ ul {
 .page-footer .social-net {
         padding: 0;
 }
+.form .send-signup {
+        align-items: center;
+        margin-top: 72px; 
+        margin-left: 93px;
+        width: 570px; 
+        height: 86px; 
+}
+
 /*Portfolio*/
 .section-portfolio {
         width: 100%;
