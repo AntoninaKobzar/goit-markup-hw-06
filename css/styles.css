@@ -648,7 +648,8 @@ ul {
         background-color: #2F303A;
         display: block;
         display: flex;
-        width: 1200px;
+        width: 100%px;
+        margin: 0 auto;
         align-items: baseline; 
 }
 .logo-footer {
@@ -739,9 +740,11 @@ ul {
 }
 .footer-list {
         display: flex;
+        min-width: 1170px;
         align-items: baseline;
         list-style: none;
-        padding: 0 0 60px 0;
+        padding: 0;
+        padding-bottom: 60px;
 }
 
 .footer-links {
@@ -761,7 +764,7 @@ ul {
         display: flex;
         flex-direction: column;
         padding-left: 0;
-        margin: 72px auto 0 93px;
+        margin: 72px 0 0 93px;
         width: 570px;
         height: 86px;
 }
@@ -800,7 +803,7 @@ ul {
 }
 .signup-button {
         display: block;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 10px 28px;
         width: 200px;
         height: 50px;
