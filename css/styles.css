@@ -740,7 +740,7 @@ ul {
 }
 .footer-list {
         display: flex;
-        min-width: 1170px;
+        /* min-width: 1170px; */
         align-items: baseline;
         list-style: none;
         padding: 0;
