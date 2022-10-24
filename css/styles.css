@@ -761,7 +761,7 @@ ul {
         display: flex;
         flex-direction: column;
         padding-left: 0;
-        margin: 72px auto 94px 93px;
+        margin: 72px auto 0 93px;
         width: 570px;
         height: 86px;
 }
