@@ -650,8 +650,8 @@ ul {
         display: flex;
         width: 100%;
         width: 1200px;
-                padding-left: 15px;
-                padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin: 0 auto;
         align-items: baseline; 
 }
@@ -762,7 +762,7 @@ ul {
 .page-footer .social-net {
         padding: 0;
 }
-.signup-form {
+/* .signup-form {
         display: block;
         display: flex;
         flex-direction: column;
@@ -770,16 +770,22 @@ ul {
         margin: 72px 0 0 93px;
         width: 570px;
         height: 86px;
-}
+} */
 .signup {
         display: flex;
+        flex-direction: column;
         padding: 0;
+        margin: 72px 0 0 93px;
+        width: 570px;
+        height: 86px;
+        justify-content: center;
+        align-items: center;
 
 
 }
 .signup-title {
         display: flex;
-        margin-bottom: 20px;
+        margin: 0 auto 20px 0;
         padding: 0;
         font-family: 'Roboto';
         font-style: normal;
@@ -789,30 +795,33 @@ ul {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
-}
+} 
 
 .email-input {
-        display: block;
         display: flex;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         margin-right: 12px;
+        margin-left: 93px;
+        padding: 15px 16px;
         width: 358px;
         height: 50px;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
         background-color: rgba(47, 48, 58, 1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
-        box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: rgba(255, 255, 255, 0.3);
 }
 .signup-button {
         display: block;
         display: flex;
-        /* margin: 0 auto; */
+        /* margin: 0 auto;  */
         padding: 10px 28px;
         width: 200px;
         height: 50px;
-        align-items: center;
-        text-align: center; 
+        /* align-items: center;
+        text-align: center;  */
         background-color: var(--button-active-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
