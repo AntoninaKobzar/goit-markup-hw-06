@@ -762,15 +762,10 @@ ul {
 .page-footer .social-net {
         padding: 0;
 }
-/* .signup-form {
-        display: block;
+.signup-form {
         display: flex;
-        flex-direction: column;
         padding-left: 0;
-        margin: 72px 0 0 93px;
-        width: 570px;
-        height: 86px;
-} */
+} 
 .signup {
         display: flex;
         flex-direction: column;
@@ -778,10 +773,9 @@ ul {
         margin: 72px 0 0 93px;
         width: 570px;
         height: 86px;
-        justify-content: center;
+        justify-content: flex-start;
+        justify-items: flex-start;
         align-items: center;
-
-
 }
 .signup-title {
         display: flex;
@@ -798,15 +792,15 @@ ul {
 } 
 
 .email-input {
-        display: flex;
-        /* margin: 0 auto; */
+        display: block;
+        display: flex; 
         margin-right: 12px;
-        margin-left: 93px;
+        margin-left: 0;
         padding: 15px 16px;
         width: 358px;
         height: 50px;
-        /* justify-content: center;
-        align-items: center; */
+        justify-content: flex-start;
+        align-items: center;
         background-color: rgba(47, 48, 58, 1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
@@ -816,12 +810,9 @@ ul {
 .signup-button {
         display: block;
         display: flex;
-        /* margin: 0 auto;  */
         padding: 10px 28px;
         width: 200px;
         height: 50px;
-        /* align-items: center;
-        text-align: center;  */
         background-color: var(--button-active-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
