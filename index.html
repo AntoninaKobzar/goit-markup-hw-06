@@ -434,20 +434,20 @@
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
             </div>
-            <label class="form-label" for="person-comment">Коментар</label>
-              <textarea class="form-textarea" id="person-comment" 
-               name="person-comment" placeholder="Введіть текст"></textarea>
+            <label class="form-label" for="form-textarea">Коментар</label>
+              <textarea class="form-textarea" id="form-textarea"
+              name="person-comment" placeholder="Введіть текст"></textarea>
 
-               <div class="checkbox">
-                <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox" value="" checked/>
-            <label class="checkbox-label" for="terms-checkbox">
-              Погоджуюся з розсилкою та приймаю <a class="terms" href="./" >Умови договору</a></label>
-              <svg class="check-icon" width="16" height="15">
-                  <use href="./images/icons.svg#icon-square"></use>
-                </svg>
-                <svg class="checked-icon visually-hidden" width="16" height="15">
+               <div class="checkbox"> 
+                <label class="checkbox-label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a class="terms" href="./" >Умови договору</a></label>
+              <svg class="checked-icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-square"></use>
+                </svg>
+                <input class="checkbox-input" id="terms-checkbox" 
+                type="checkbox" name="terms-checkbox" value="" checked/> 
               </div> 
             <button class="send-button" type="submit">Відправити</button>
           </form>
