@@ -361,6 +361,11 @@ ul {
         position: absolute;
         appearance: none;
 }
+.checkbox-input:hover,
+.checkbox-input:focus,
+.checkbox-input:active {
+        cursor: pointer;
+}
 .checkbox-label {
         display: block;
         padding-left: 28px;
@@ -375,17 +380,20 @@ ul {
         position: absolute;
         left: 5px;
         top: 3px;
-        background-color: none;
+        
 }
 .checked-icon {
-        appearance: none;
+        opacity: 1;
         position: absolute; 
+        fill: var(--aditional-color);
+        border: none;
         left: 5px;
         top: 3px;
 }
 .checkbox-input:checked +.checked-icon {
+        opacity: 1;
         border:none;
-        color: var(--button-active-color);
+        background-color: var(--button-active-color);
         
 }
 .terms {
