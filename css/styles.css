@@ -9,6 +9,7 @@
         --aditional-color: #ffffff;
         --accent-text-color:#757575;
         --button-active-color:#2196F3;
+        --transition-timing-function:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
     font-family: Roboto,sans-serif;
@@ -106,7 +107,7 @@ ul {
         text-decoration: none;
         padding-top: 32px;
         padding-bottom: 32px; 
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-timing-function);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -135,7 +136,7 @@ ul {
         font-weight: 500;
         letter-spacing: 0.02em;
         text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-timing-function);
 }
 .site-auth .item {
         display: flex;
@@ -214,7 +215,9 @@ ul {
         border: 0;
         border-radius: 4px;
         cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) , color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function), 
+        color var(--transition-timing-function), 
+        box-shadow var(--transition-timing-function); 
 }
 .order-button:hover,
 .order-button:active,
@@ -231,7 +234,8 @@ ul {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.2);
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity var(--transition-timing-function),
+        visibility var(--transition-timing-function);
 }
 .is-hidden { 
         visibility: hidden;
@@ -255,7 +259,7 @@ ul {
         overflow: auto;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         background-color: var(--aditional-color);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform var(--transition-timing-function), box-shadow var(--transition-timing-function);
 }
 .button-close {
         position: absolute; 
@@ -272,8 +276,7 @@ ul {
         border-radius: 50%;
         color: #000000;
         cursor: pointer;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); */
+        transition: color var(--transition-timing-function);
 }
 .button-close:focus,
 .button-close:hover {
@@ -320,8 +323,7 @@ ul {
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px; 
         outline: none; 
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color var(--transition-timing-function), color var(--transition-timing-function);
 }
 .form-input:focus,
 .form-input:active {
@@ -351,7 +353,7 @@ ul {
         border-radius: 4px;
         outline: none;
         resize: none;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color var(--transition-timing-function);
 }
 .form-textarea:active,
 .form-textarea:focus {
@@ -393,7 +395,7 @@ ul {
         top: 3px;
         border: 2px solid var(--primary-text-color);
         border-radius: 2px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function);
 } 
 .terms {
         color: var(--button-active-color);
@@ -417,8 +419,7 @@ ul {
         
         border-radius: 4px;
         border-color: var(--button-active-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function), box-shadow var(--transition-timing-function);
 } 
 .send-button:focus,
 .send-button:hover,
@@ -429,6 +430,7 @@ ul {
 
  
 /* section-features */
+
 .section-features {
         width: 100%;
         padding-top: 94px;
@@ -478,11 +480,12 @@ ul {
         gap: 30px;
 }
 /* section-activities */
+
 .section-activities {
         width: 100%;
         padding-bottom: 94px;
         width: auto;
-         }
+ }
 .activities {
         display: flex;
         padding: 0;
@@ -529,8 +532,6 @@ ul {
         opacity: 0.8;
 }
 .thumb-title {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -539,7 +540,9 @@ ul {
         text-transform: uppercase;
          color: var(--aditional-color);
 }
+
 /* section staff     */
+
 .section-staff {
         width: 100%;
         padding-bottom: 94px;
@@ -580,8 +583,6 @@ ul {
         padding-top: 30px;
 }
 .staff-name {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -591,8 +592,6 @@ ul {
         margin-bottom: 10px;
 }
 .position {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
@@ -616,7 +615,7 @@ ul {
         background-color:var(--aditional-color);
         border-radius: 50%;
         color:#AFB1B8;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function), color var(--transition-timing-function), fill var(--transition-timing-function);
         
 }
 .net-icon {
@@ -654,7 +653,7 @@ ul {
         border-radius: 4%;
         background-color: var(--aditional-color); 
         color: #AFB1B8;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-timing-function), outline var(--transition-timing-function), fill var(--transition-timing-function);
 }
 .company-icon {
         fill:currentColor;
@@ -684,7 +683,9 @@ ul {
         color: var(--primary-text-color);
         margin-bottom: 50px;
 }
+
 /*Footer*/
+
 .page-footer {
         background-color: #2F303A;
         display: block;
@@ -697,8 +698,6 @@ ul {
         align-items: baseline; 
 }
 .logo-footer {
-        font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
@@ -728,7 +727,7 @@ ul {
         letter-spacing: 0.03em;
         color: var(--aditional-color);
         text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-timing-function);
         
 }
  .email {
@@ -738,7 +737,7 @@ ul {
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-timing-function);
 }
 .phone {
         font-size: 14px;
@@ -747,7 +746,7 @@ ul {
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-timing-function);
 }
 .address a:focus,
 .address a:hover {
@@ -756,7 +755,7 @@ ul {
 .page-footer .net-link {
         background-color:rgba(255, 255, 255, 0.1);
         color:var(--aditional-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function), fill var(--transition-timing-function);
 }
 .page-footer .net-icon {
         fill: currentColor;
@@ -773,8 +772,6 @@ ul {
         display: block;
         display: flex;
         margin-bottom: 20px;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -784,7 +781,6 @@ ul {
 }
 .footer-list {
         display: flex;
-        /* min-width: 1170px; */
         align-items: baseline;
         list-style: none;
         padding: 0;
@@ -797,7 +793,7 @@ ul {
         padding: 0;
 }
 .footer-links:nth-child(2) {
-        margin-left: 70px;;
+        margin-left: 70px;
 }
 
 .page-footer .social-net {
@@ -822,8 +818,6 @@ ul {
         display: flex;
         margin: 0 auto 20px 0;
         padding: 0;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -842,8 +836,6 @@ ul {
         height: 50px;
         justify-content: flex-start;
         align-items: center;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -864,16 +856,13 @@ ul {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border-color: var(--button-active-color);
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.06em;
         color: var(--aditional-color);
         cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function), color var(--transition-timing-function);
 }
 .signup-button:hover,
 .signup-button:focus,
@@ -887,6 +876,7 @@ ul {
 }
 
 /*Portfolio*/
+
 .section-portfolio {
         width: 100%;
         padding: 94px 0;
@@ -903,7 +893,7 @@ ul {
         border-radius: 4px;
         border-width: 0;
         cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition-timing-function), color var(--transition-timing-function), box-shadow var(--transition-timing-function);
 }
 .filters {
         display: flex;
@@ -940,7 +930,7 @@ ul {
 .conteiner-examples .item {
         flex-basis: calc((100% - 60px) / 3);
         background-color: var(--aditional-color);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: box-shadow var(--transition-timing-function);
 }
 .conteiner-examples .item:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -958,12 +948,10 @@ ul {
         width: 100%;
         height: 100%;
         transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        transition: transform var(--transition-timing-function); 
 }
 .overlay-text {
         display: block;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 1.56;
