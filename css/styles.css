@@ -691,7 +691,6 @@ ul {
 
 .page-footer {
         background-color: #2F303A;
-        display: block;
         display: flex;
         width: 100%;
         min-width: 1200px;
