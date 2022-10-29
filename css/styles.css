@@ -329,6 +329,7 @@ ul {
 .form-input:active {
         border-color:  var(--button-active-color);
         color:var(--button-active-color);
+        cursor: pointer;
         
 }
 
@@ -358,6 +359,7 @@ ul {
 .form-textarea:active,
 .form-textarea:focus {
         border-color: var(--button-active-color);
+        cursor: pointer;
 }
 .comment-input {
         resize: none;
@@ -376,6 +378,7 @@ ul {
 .checkbox-input:checked + .checked-icon {
         background-color: var(--button-active-color);
         border: 0;
+        cursor: pointer;
 } 
 .checkbox-label {
         display: block;
@@ -827,7 +830,6 @@ ul {
 } 
 
 .email-input {
-        display: block;
         display: flex; 
         margin-right: 12px;
         margin-left: 0;
@@ -840,11 +842,17 @@ ul {
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;
+        outline: none;
         color: rgba(255, 255, 255, 0.6);
         background-color: rgba(47, 48, 58, 1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: border-color var(--transition-timing-function);
+}
+.email-input:active,
+.email-input:focus {
+        border-color: var(--button-active-color);
 }
 .signup-button {
         display: block;
