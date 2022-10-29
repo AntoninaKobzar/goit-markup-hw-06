@@ -694,7 +694,7 @@ ul {
         display: block;
         display: flex;
         width: 100%;
-        width: 1200px;
+        min-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
