@@ -693,15 +693,17 @@ ul {
         background-color: #2F303A;
         display: flex;
         min-width:1200px;
-        margin: 0 auto;
-        align-items: baseline; 
-}
-.conteiner-footer {
-        width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
-
+        margin: 0 auto;
+        align-items:baseline;
+        justify-content: center;
 }
+.conteiner-footer {
+        min-width: 1170px;
+        padding: 0;
+        display: flex;
+} 
 .logo-footer {
         font-family: 'Raleway';
         font-style: normal;
@@ -711,8 +713,6 @@ ul {
         letter-spacing: 0.03em;
         color: var(--button-active-color);
         text-decoration: none;
-        padding: 0;
-        margin-top: 60px;
 }
 .page-footer .studio {
         color: var(--aditional-color);
@@ -778,7 +778,6 @@ ul {
 .page-footer .subtitle  {
         display: block;
         display: flex;
-        margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -788,24 +787,30 @@ ul {
 }
 .footer-list {
         display: flex;
+        min-width: 1170px;
         align-items: baseline;
+        justify-content: space-between;
         list-style: none;
-        padding: 0;
-        padding-bottom: 60px;
 }
 
 .footer-links {
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 60px 0;
 }
-.footer-links:nth-child(2) {
-        margin-left: 70px;
+.join-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 72px 93px 100px 70px;
 }
 
 .page-footer .social-net {
         padding: 0;
-}
+} 
+
 .signup-form {
         display: flex;
         padding-left: 0;
@@ -813,15 +818,11 @@ ul {
 .signup {
         display: flex;
         flex-direction: column;
-        padding: 0;
-        justify-content: flex-start;
-        justify-items: flex-start;
-        align-items: center;
+        padding: 72px 0 94px 0;
+        align-items: flex-start;
 }
 .signup-title {
-        display: flex;
-        margin: 0 auto 20px 0;
-        padding: 0;
+        margin-bottom:20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -833,7 +834,7 @@ ul {
 .email-input {
         display: flex; 
         margin-right: 12px;
-        margin-left: 0;
+        margin-left: 0; 
         padding: 15px 16px;
         width: 358px;
         height: 50px;
